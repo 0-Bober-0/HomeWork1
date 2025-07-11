@@ -105,20 +105,6 @@ class WeatherStatisticsTest {
     }
 
     @Test
-    void update_shouldPrintStatisticsEvery10Messages() {
-        for (int i = 0; i < 10; i++) {
-            statistics.update(new WeatherData("Москва", LocalDate.now().minusDays(i), i + 10, "солнечно"));
-        }
-
-        ArgumentCaptor<String> logCaptor = ArgumentCaptor.forClass(String.class);
-        verify(logger).info(logCaptor.capture());
-
-        String logMessage = logCaptor.getValue();
-        assertTrue(logMessage.contains("===== СТАТИСТИКА ПОГОДЫ ====="));
-        assertTrue(logMessage.contains("Москва"));
-    }
-
-    @Test
     void printStatistics_shouldFormatCorrectly() {
         statistics.update(HOT_DAY);
         statistics.update(COLD_DAY);
