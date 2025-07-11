@@ -48,7 +48,7 @@ Spring(Boot), JUnit, Kafka, Docker, Kafdrop, Lombok, Javadoc, logging
 ![image](https://github.com/user-attachments/assets/3f30086f-78c6-4f99-930b-4e937dc8bfa8)
 
 ### Страница Kafdrop
-![image](https://github.com/user-attachments/assets/5abbe2d8-b813-4032-8b00-9fa11ca4c6b0)
+![image](https://github.com/user-attachments/assets/41bc8253-f081-4b3e-8651-e8eef58bb800)
 
 
 ### Сообщения в топике
