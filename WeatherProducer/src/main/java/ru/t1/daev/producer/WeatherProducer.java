@@ -58,7 +58,7 @@ public class WeatherProducer {
             kafkaTemplate.send(topicName, data.getCity(), data);
             log.info("[PRODUCER] Отправлены данные: {}", data);
         } catch (Exception e) {
-            log.error("[PRODUCER] Ошибка отправки данных для города {}:",  e.getMessage());
+            log.error("[PRODUCER] Ошибка отправки данных: {}",  e.getMessage());
         }
     }
 }

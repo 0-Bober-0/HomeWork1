@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WeatherProducer/WeatherProducer.iml" filepath="$PROJECT_DIR$/WeatherProducer/WeatherProducer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/t1 - work1 daev.iml" filepath="$PROJECT_DIR$/.idea/t1 - work1 daev.iml" />
     </modules>
   </component>
