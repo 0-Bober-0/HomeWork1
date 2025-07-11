@@ -27,7 +27,7 @@ public class WeatherProducer {
      *
      * @param topicName имя топика для отправки сообщений
      */
-    @Value("${producer.topic.name}")
+    @Value("${kafka.topic.name}")
     private String topicName;
 
     /**
