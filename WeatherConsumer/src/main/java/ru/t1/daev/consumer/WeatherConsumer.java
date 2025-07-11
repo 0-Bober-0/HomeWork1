@@ -1,4 +1,4 @@
-package ru.t1.daev.producer;
+package ru.t1.daev.consumer;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -46,27 +46,15 @@ public class WeatherConsumer {
     )
     public void consume(WeatherData data) {
         if (data == null || data.getCity() == null) {
-            log.warning("[CONSUMER] Получено некорректное сообщение: " + data);
+            log.warning("Получено пустое сообщение");
             return;
         }
 
         try {
-            log.fine(() -> String.format(
-                    "[CONSUMER] Получены данные: %s | %s | %d°C | %s",
-                    data.getCity(),
-                    data.getDate(),
-                    data.getTemperature(),
-                    data.getCondition()
-            ));
-
+            log.info("Получены данные: " + data);
             statistics.update(data);
         } catch (Exception e) {
-            log.log(Level.SEVERE,
-                    "[CONSUMER] Ошибка обработки данных для " +
-                            data.getCity() +
-                            ": " + e.getMessage(),
-                    e
-            );
+            log.severe("Ошибка обработки данных: " + e.getMessage());
         }
     }
 }

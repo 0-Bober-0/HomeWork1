@@ -1,4 +1,4 @@
-package ru.t1.daev.producer;
+package ru.t1.daev.consumer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
