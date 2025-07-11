@@ -118,6 +118,36 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build>v
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spotbugs</id>
+			<url>https://spotbugs.github.io/maven</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>gaul</id>
+			<url>https://gaul.github.io/maven-repository</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
