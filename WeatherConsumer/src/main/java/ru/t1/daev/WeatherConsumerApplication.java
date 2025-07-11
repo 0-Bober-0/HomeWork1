@@ -2,17 +2,17 @@ package ru.t1.daev;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Configuration;
 
 /**
- * Основной класс приложения для запуска Spring Boot.
- *
- * @author Alexandr Daev
+ * Класс запуска приложения
+ * @author Daev
  */
 @SpringBootApplication
 public class WeatherConsumerApplication {
-    private WeatherConsumerApplication() {}
-
+    /**
+     * Запуск приложения
+     * @param args
+     */
     public static void main(String[] args) {
         SpringApplication.run(WeatherConsumerApplication.class, args);
     }
