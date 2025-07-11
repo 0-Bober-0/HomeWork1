@@ -28,6 +28,9 @@
 	</scm>
 	<properties>
 		<java.version>24</java.version>
+		<modernizer-maven-plugin.version>2.9.0</modernizer-maven-plugin.version>
+		<spotbugs.version>4.8.2</spotbugs.version>
+		<lombok.version>1.18.30</lombok.version>
 	</properties>
 	<dependencies>
 		<dependency>
