@@ -57,7 +57,7 @@ services:
 
   consumer:
     build:
-      context: ./ConsumerProducer
+      context: ./WeatherConsumer
     ports:
       - "8082:8081"
     restart: "always"
