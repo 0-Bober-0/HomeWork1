@@ -1,4 +1,4 @@
-package ru.t1.daev.consumer;
+package ru.t1.daev.producer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +17,7 @@ import ru.t1.daev.model.WeatherDataGenerator;
  */
 @Component
 public class WeatherProducer {
-    private static final Logger log = LoggerFactory.getLogger(WeatherProducer.class);
+    private final Logger log = LoggerFactory.getLogger(WeatherProducer.class);
 
     private final KafkaTemplate<String, WeatherData> kafkaTemplate;
     private final WeatherDataGenerator dataGenerator;

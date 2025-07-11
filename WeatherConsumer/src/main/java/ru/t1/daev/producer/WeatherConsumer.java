@@ -1,4 +1,4 @@
-package ru.t1.daev.consumer;
+package ru.t1.daev.producer;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  */
 @Component
 public class WeatherConsumer {
-    private static final Logger log = Logger.getLogger(WeatherConsumer.class.getName());
+    private final Logger log = Logger.getLogger(WeatherConsumer.class.getName());
 
     private final WeatherStatistics statistics;
 

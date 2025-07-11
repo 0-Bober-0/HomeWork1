@@ -1,4 +1,4 @@
-package ru.t1.daev.consumer;
+package ru.t1.daev.producer;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

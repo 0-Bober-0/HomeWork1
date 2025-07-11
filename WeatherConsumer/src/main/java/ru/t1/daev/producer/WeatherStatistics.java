@@ -1,4 +1,4 @@
-package ru.t1.daev.consumer;
+package ru.t1.daev.producer;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
