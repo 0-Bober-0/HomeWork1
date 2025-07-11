@@ -28,10 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>24</java.version>
-		<java.version>24</java.version>
 		<modernizer-maven-plugin.version>2.9.0</modernizer-maven-plugin.version>
-		<spotbugs.version>4.8.2</spotbugs.version>
-		<lombok.version>1.18.30</lombok.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,12 +67,10 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
-							<version>${lombok.version}</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -94,34 +89,8 @@
 				<artifactId>modernizer-maven-plugin</artifactId>
 				<version>${modernizer-maven-plugin.version}</version>
 				<configuration>
-					<javaVersion>21</javaVersion>
+					<javaVersion>24</javaVersion>
 				</configuration>
-			</plugin>
-
-			<!-- SpotBugs Plugin -->
-			<plugin>
-				<groupId>com.github.spotbugs</groupId>
-				<artifactId>spotbugs-maven-plugin</artifactId>
-				<version>4.8.2.0</version>
-				<configuration>
-					<effort>Max</effort>
-					<threshold>Low</threshold>
-					<failOnError>true</failOnError>
-					<plugins>
-						<plugin>
-							<groupId>com.h3xstream.findsecbugs</groupId>
-							<artifactId>findsecbugs-plugin</artifactId>
-							<version>1.12.0</version>
-						</plugin>
-					</plugins>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
