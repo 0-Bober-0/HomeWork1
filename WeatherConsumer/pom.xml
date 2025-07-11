@@ -118,7 +118,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>v
+	</build>
 
 	<repositories>
 		<repository>
