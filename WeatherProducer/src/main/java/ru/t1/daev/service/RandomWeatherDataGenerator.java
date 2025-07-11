@@ -26,7 +26,7 @@ public class RandomWeatherDataGenerator implements WeatherDataGenerator {
             "солнечно", "облачно", "дождь", "гроза"
     );
 
-    private final Random random = new Random();
+    Random random = new Random();
 
     /**
      * Генерирует случайные данные о погоде.
@@ -46,26 +46,26 @@ public class RandomWeatherDataGenerator implements WeatherDataGenerator {
         return data;
     }
 
-    private String getRandomCity() {
+    String getRandomCity() {
         String city = CITIES.get(random.nextInt(CITIES.size()));
         log.trace("Выбран город: {}", city);
         return city;
     }
 
-    private LocalDate getRandomDate() {
+    LocalDate getRandomDate() {
         int daysOffset = random.nextInt(7);
         LocalDate date = LocalDate.now().minusDays(daysOffset);
         log.trace("Сгенерирована дата: {} (смещение: {} дней)", date, daysOffset);
         return date;
     }
 
-    private int getRandomTemperature() {
+    int getRandomTemperature() {
         int temp = random.nextInt(36);
         log.trace("Сгенерирована температура: {}°C", temp);
         return temp;
     }
 
-    private String getRandomCondition() {
+    String getRandomCondition() {
         String condition = CONDITIONS.get(random.nextInt(CONDITIONS.size()));
         log.trace("Сгенерировано состояние погоды: {}", condition);
         return condition;
