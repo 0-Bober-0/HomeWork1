@@ -1,0 +1,11 @@
+2025-07-11T19:26:44.786+03:00  INFO 14968 --- [WeatherProducer] [main] ru.t1.daev.WeatherProducerApplication    : Starting WeatherProducerApplication using Java 24.0.1 with PID 14968 (F:\HomeWork1\WeatherProducer\target\classes started by sdaew in F:\HomeWork1)
+2025-07-11T19:26:44.789+03:00  INFO 14968 --- [WeatherProducer] [main] ru.t1.daev.WeatherProducerApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-11T19:26:45.421+03:00  INFO 14968 --- [WeatherProducer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-11T19:26:45.431+03:00  INFO 14968 --- [WeatherProducer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-11T19:26:45.432+03:00  INFO 14968 --- [WeatherProducer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-11T19:26:45.463+03:00  INFO 14968 --- [WeatherProducer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-11T19:26:45.463+03:00  INFO 14968 --- [WeatherProducer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 630 ms
+2025-07-11T19:26:45.758+03:00  INFO 14968 --- [WeatherProducer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-11T19:26:45.763+03:00  INFO 14968 --- [WeatherProducer] [main] ru.t1.daev.WeatherProducerApplication    : Started WeatherProducerApplication in 1.432 seconds (process running for 1.901)
+2025-07-11T19:26:53.931+03:00  INFO 14968 --- [WeatherProducer] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-11T19:26:53.936+03:00  INFO 14968 --- [WeatherProducer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

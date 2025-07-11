@@ -3,7 +3,6 @@ package ru.t1.daev.consumer;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 import ru.t1.daev.model.WeatherData;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**

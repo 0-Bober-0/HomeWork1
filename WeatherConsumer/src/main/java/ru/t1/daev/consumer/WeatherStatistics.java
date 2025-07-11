@@ -8,13 +8,10 @@ import ru.t1.daev.model.WeatherData;
 
 /**
  * Компонент для сбора и анализа статистики погодных данных.
- * <p>
  * Аккумулирует данные по городам, вычисляет экстремальные температурные значения,
  * подсчитывает солнечные/дождливые дни и средние температуры. Автоматически выводит
  * статистику при обработке каждого 10-го сообщения.
- * </p>
- *
- * <p>Потокобезопасность обеспечивается синхронизированными методами и ConcurrentHashMap.</p>
+ * @author Daev
  */
 @Component
 public class WeatherStatistics {
@@ -63,7 +60,8 @@ public class WeatherStatistics {
 
         calculateAvgTemperatures();
 
-        if (++messageCount % 10 == 0) {
+        messageCount++;
+        if (messageCount % 10 == 0) {
             log.info("Обработано " + messageCount + " сообщений. Формирование статистики...");
             printStatistics();
         }
